@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'update-employee/:id', component: UpdateEmployeeComponent},
   {path:'create-manager',component:ManagerComponent},
   {path: 'employee-details/:id', component: EmployeeViewComponent},
-  {path :'', component:HomeComponent,pathMatch:'full'},
+  {path :'', redirectTo:'login',pathMatch:'full'},
   {path:"login", component:LoginComponent},
   {path:"dashboard", component:DashboardComponent}
 ];

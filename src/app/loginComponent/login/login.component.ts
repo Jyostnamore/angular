@@ -30,10 +30,12 @@ export class LoginComponent implements OnInit {
         console.log(response.token);
 
         this.loginser.loginUser(response.token)
+        alert("Login Successfully");
         window.location.href="/employees"
       },
     error =>{
       //error
+      alert("Please enter valid EmailId and Password");
       console.log(error)}
       
       

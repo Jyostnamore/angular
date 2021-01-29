@@ -4,6 +4,7 @@ export class Manager {
     lastname! :string;
     email! :string;
     dob!:Date;
+    address!:string;
     password!: string;
     company!:string;
     

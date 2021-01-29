@@ -19,6 +19,13 @@ import { LoginComponent } from './loginComponent/login/login.component';
 import { DashboardComponent } from './loginComponent/dashboard/dashboard.component';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatInputModule} from '@angular/material/input'
+import {MatDialogModule } from '@angular/material/dialog';
+import{ConfirmationPopoverModule} from 'angular-confirmation-popover';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon'
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ConfirmationDialogueComponent } from './confirmation-dialogue/confirmation-dialogue.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +38,10 @@ import {MatInputModule} from '@angular/material/input'
     NavbarComponent,
     HomeComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ConfirmationDialogueComponent,
+    
+
   ],
   imports: [
     BrowserModule,
@@ -43,9 +53,19 @@ import {MatInputModule} from '@angular/material/input'
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule
+   
     
     
     
+    
+  ],
+  entryComponents: [
+    ConfirmationDialogueComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -23,7 +23,10 @@
     "@angular/router": "~11.0.9",
     "@ionic-native/camera": "^5.30.0",
     "@ionic-native/core": "^5.30.0",
+    "angular-bootstrap-md": "^10.1.1",
+    "angular-confirmation-popover": "^6.0.0",
     "bootstrap": "^4.5.3",
+    "material-icons": "^0.5.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
